@@ -1,0 +1,12 @@
+.content-wrapper {
+  background: #303030;
+  padding: 12px 25px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+app-card {
+  min-width: 300px;
+  margin: 19px;
+}

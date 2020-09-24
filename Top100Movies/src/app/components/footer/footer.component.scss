@@ -1,0 +1,13 @@
+$PRIMARY_COLOR: #e91e63;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: $PRIMARY_COLOR;
+  display: flex;
+  justify-content: flex-end;
+  .mat-paginator {
+    background-color: inherit;
+  }
+}

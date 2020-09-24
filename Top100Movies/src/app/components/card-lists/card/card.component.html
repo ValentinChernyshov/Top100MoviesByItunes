@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title [matTooltip]="movie['im:name']?.label">{{movie["im:name"]?.label}}</mat-card-title>
+    <mat-card-subtitle [matTooltip]="movie.rights?.label">{{movie.rights?.label}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="movie['im:image'][2].label.slice(0,-13) + '460x0w.jpg'" alt="Poster of Movie">
+  <mat-card-content>
+    <p [matTooltip]="movie['summary'].label">
+      {{movie['summary'].label}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <span>Price</span>
+    <span>{{movie["im:price"].label}}</span>
+    <button mat-stroked-button color="primary">Buy</button>
+  </mat-card-actions>
+</mat-card>

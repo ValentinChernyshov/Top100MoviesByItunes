@@ -1,0 +1,39 @@
+@mixin trimLines($lines) {
+  -webkit-line-clamp: $lines;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.mat-card {
+  margin-bottom: 5px;
+  mat-card-title {
+    @include trimLines(1);
+  }
+  mat-card-subtitle {
+    min-height: 34px;
+    @include trimLines(2);
+  }
+  mat-card-actions {
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.mat-card-content {
+  min-height: 180px;
+  max-height: 180px;
+  p {
+    @include trimLines(10);
+  }
+}
